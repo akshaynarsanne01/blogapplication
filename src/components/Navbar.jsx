@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="bg-transparent border-2 border-gray-200 p-8 flex justify-center space-x-8 items-center text-black">
       <div className='space-x-4'>
-        <Link to="/" className="">Home</Link>
+        <Link to="/blog" className="">Home</Link>
         {
           token && <Link to="/create" className="">Create Post</Link>
         }
