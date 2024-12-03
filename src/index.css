@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Define gradient animation */
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  /* Apply gradient animation to a background class */
+  .animated-background {
+    background: linear-gradient(-45deg, 
+    rgba(255, 154, 158, 0.1), 
+    rgba(250, 208, 196, 0.1), 
+    rgba(251, 194, 235, 0.1), 
+    rgba(166, 192, 254, 0.1)  
+);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  /* Hide horizontal overflow on body */
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+  }
+  
+  /* Apply animated background to the body */
+  body.animated-background {
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c0fe);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s infinite;
+  }
+  
+  /* Hover effect for borders */
+  .hover-border-rgb:hover {
+    border-color: rgb(1, 255, 0);
+  }
